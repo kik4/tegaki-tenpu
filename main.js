@@ -45,6 +45,8 @@ const canvasDraw = imgsrc => {
     cv.width = width;
     cv.height = height;
     const ctx = cv.getContext("2d");
+    ctx.fillStyle = "rgb(240, 224, 214)";
+    ctx.fillRect(0, 0, maxWidth, maxHeight);
     ctx.drawImage(image, 0, 0, width, height);
   };
   image.src = imgsrc;
