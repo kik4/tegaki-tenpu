@@ -1,5 +1,5 @@
-const maxWidth = 250;
-const maxHeight = 250;
+const maxWidth = 400;
+const maxHeight = 400;
 
 const input = document.createElement("input");
 
