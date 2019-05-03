@@ -1,5 +1,5 @@
-const maxWidth = 200;
-const maxHeight = 200;
+const maxWidth = 250;
+const maxHeight = 250;
 
 const input = document.createElement("input");
 
@@ -29,13 +29,18 @@ const canvasDraw = imgsrc => {
       alert("手書き機能をオンにしてください");
       return;
     }
-    let width , height;
-    if (image.width > image.height) {
-      width = maxWidth;
-      height = (maxWidth * image.height) / image.width;
+    let width, height;
+    if (image.width > maxWidth || image.height > maxHeight) {
+      if (image.width > image.height) {
+        width = maxWidth;
+        height = (maxWidth * image.height) / image.width;
+      } else {
+        height = maxHeight;
+        width = (maxHeight * image.width) / image.height;
+      }
     } else {
-      height = maxHeight;
-      width = (maxHeight * image.width) / image.height;
+      width = image.width;
+      height = image.height;
     }
     cv.width = width;
     cv.height = height;
