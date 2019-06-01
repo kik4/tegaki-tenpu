@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "tegaki-tenpu",
-  "version": "0.3",
+  "version": "0.4",
   "content_scripts": [
     {
       "matches": ["https://img.2chan.net/b/res/*"],
