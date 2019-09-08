@@ -1,4 +1,4 @@
-const tegakiTenpu = () => {
+tegakiTenpu = () => {
   const maxWidth = 400;
   const maxHeight = 400;
 
